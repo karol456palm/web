@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Curriculum</title>
+        <style type="text/css">
+        	h1
+        	{
+        		font-family: "Britannic Bold";
+            	font-size:100px;
+            	color:#666;
+            	text-align: center;
+			}
+			p1
+			{
+				font-family: "Britannic Bold";
+				font-size: 40px;
+				color:#999;
+			}
+		body {
+	background-color: #333333;
+}
+        </style>    
+	</head>
+
+
+	<body background="imajenes/degradado.jpg">
+   	<h1>INICIAR SESIÓN</h1>
+    	<form name="login" align="center">
+    		<p1>Usuario</p1>
+            <input type="text" name="nombre" align="center">
+            <p1> contraseña </p1>
+    		<input type="password" name="clave" />
+            <input type="button" onclick="check(this.form)" value="Aceptar"/>
+    	</form>
+        <script language="javascript">
+			function check(form)
+			{
+				if(form.nombre.value=="Melissa" && form.clave.value=="12345")
+					window.open('index1.html')
+				else
+					alert("Error: La contraseña o el usuario es incorrecto")
+			}
+        </script>
+	</body>
+</html>
